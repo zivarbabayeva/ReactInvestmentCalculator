@@ -1,7 +1,7 @@
 import { useState } from "react"
 export default function UserInput({formData,onChange}) {
     
-    return
+    return<>
     <section id="user-input">
         <div className="input-group" >
             <div>
@@ -24,4 +24,5 @@ export default function UserInput({formData,onChange}) {
             </div>
         </div>
     </section>
+    </>
 }

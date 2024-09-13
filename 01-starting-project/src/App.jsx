@@ -1,7 +1,8 @@
-import Header from "./components/Header"
+import Header from "./components/Header.jsx";
 import React, { useState } from "react";
-import UserInput from "./components/UserInput"
-import Result from "./components/Result";
+import UserInput from "./components/UserInput.jsx";
+import Result from "./components/Result.jsx";
+
 function App() {
   const [formData, setFormData] = useState({
     initialInvestment: 10000,
@@ -25,7 +26,8 @@ function App() {
     {
       isValid ?
         <Result data={formData} />
-        : <p className="center">Enter valid duration</p>
+        :
+         <p className="center">Enter valid duration</p>
     }
 
   </>
